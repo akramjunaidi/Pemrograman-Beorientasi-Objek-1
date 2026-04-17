@@ -1,12 +1,10 @@
 class MataKuliah:
-    # 1. Blueprint / Cetakan Atribut
     def __init__(self, nama_mk, jumlah_sks, dosen_pengampu, ruang_kelas):
         self.nama_mk = nama_mk
         self.jumlah_sks = jumlah_sks
         self.dosen_pengampu = dosen_pengampu
         self.ruang_kelas = ruang_kelas
 
-    # 2. Method Sederhana (Tindakan)
     def tampilkanNamaMK(self):
         print("Nama Mata Kuliah  :", self.nama_mk)
         
