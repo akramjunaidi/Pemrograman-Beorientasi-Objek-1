@@ -20,7 +20,7 @@ daftar_mahasiswa = []
 jumlah = int(input("Masukkan Jumlah Mahasiswa: "))
 
 for i in range(jumlah):
-    print(f"Data ke-{i+1}")
+    print("Data ke-{i+1}")
     nama = input("Masukkan Nama: ")
     nim = input("Masukkan NIM: ")
     
@@ -29,4 +29,4 @@ for i in range(jumlah):
 
 print("HASIL DATA MAHASISWA")
 for mhs in daftar_mahasiswa:
-    print(f"Nama: {mhs.getNama()} | NIM: {mhs.getNim()}")
+    print("Nama: {mhs.getNama()} | NIM: {mhs.getNim()}")
