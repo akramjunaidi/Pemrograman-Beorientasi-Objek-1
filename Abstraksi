@@ -14,8 +14,8 @@ class mahasiswa:
     def tampilkanAlamat(self):
         print("Alamat: ", self.alamat)
 
-dwi = mahasiswa("Dwi Indarti wardani", "250306010", "12-10-2006", "Flores")
-dwi.tampilkanNama()
-dwi.tampilkanNim()
-dwi.tampilkanTanggallahir()
-dwi.tampilkanAlamat()
+akaii = mahasiswa("Akram Junaidi", "250306033", "o4-04-2005", "Maluk")
+akaii.tampilkanNama()
+akaii.tampilkanNim()
+akaii.tampilkanTanggallahir()
+akaii.tampilkanAlamat()
