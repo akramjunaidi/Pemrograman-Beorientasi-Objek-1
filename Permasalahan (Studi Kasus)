@@ -1,0 +1,31 @@
+class MataKuliah:
+    # 1. Blueprint / Cetakan Atribut
+    def __init__(self, nama_mk, jumlah_sks, dosen_pengampu, ruang_kelas):
+        self.nama_mk = nama_mk
+        self.jumlah_sks = jumlah_sks
+        self.dosen_pengampu = dosen_pengampu
+        self.ruang_kelas = ruang_kelas
+
+    # 2. Method Sederhana (Tindakan)
+    def tampilkanNamaMK(self):
+        print("Nama Mata Kuliah  :", self.nama_mk)
+        
+    def tampilkanSKS(self):
+        print("Jumlah SKS        :", self.jumlah_sks)
+        
+    def tampilkanDosen(self):
+        print("Dosen Pengampu    :", self.dosen_pengampu)
+        
+    def tampilkanRuang(self):
+        print("Ruang Kelas       :", self.ruang_kelas)
+
+mk_algo = MataKuliah("Algoritma dan Struktur Data", "3 SKS", "Bapak Ahmad Rizal", "Lab Komputer TIPD")
+
+print("DETAIL MATA KULIAH")
+mk_algo.tampilkanNamaMK()
+mk_algo.tampilkanSKS()
+mk_algo.tampilkanDosen()
+mk_algo.tampilkanRuang()
+
+
+
