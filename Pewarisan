@@ -1,0 +1,8 @@
+class hewan: 
+    def __init__(self, nama, jenis):
+        self.nama = nama
+        self.jenis = jenis 
+
+kucing = hewan("Mini", "Oren")
+print(kucing.nama)
+print(kucing.jenis)
