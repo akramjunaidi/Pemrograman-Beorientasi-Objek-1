@@ -22,14 +22,14 @@ daftar_mahasiswa = [
 
 print("DATA AWAL")
 for mhs in daftar_mahasiswa:
-    print(f"Nama: {mhs.getNama()} | NIM: {mhs.getNim()}")
+    print("Nama: {mhs.getNama()} | NIM: {mhs.getNim()}")
 
 print("FITUR GANTI NAMA")
 nama_dicari = input("Masukkan nama yang ingin diganti: ")
 
 for mhs in daftar_mahasiswa:
     if mhs.getNama() == nama_dicari:
-        nama_baru = input(f"Masukkan nama pengganti untuk {nama_dicari}: ")
+        nama_baru = input("Masukkan nama pengganti untuk {nama_dicari}: ")
         mhs.setNama(nama_baru) 
 
 print("HASIL DATA AKHIR")
