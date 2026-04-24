@@ -1,31 +1,39 @@
+#Studi Kasus: Object dan Class 
+#Informasi Mata Kuliah
+#Kelompok 6 A
+
 class MataKuliah:
-    # 1. Blueprint / Cetakan Atribut
-    def __init__(self, nama_mk, jumlah_sks, dosen_pengampu, ruang_kelas):
+    def __init__(self, kelas, nama_mk, jumlah_sks, dosen_pengampu, ruang_kelas):
+        self.kelas = kelas
         self.nama_mk = nama_mk
         self.jumlah_sks = jumlah_sks
         self.dosen_pengampu = dosen_pengampu
         self.ruang_kelas = ruang_kelas
 
-    # 2. Method Sederhana (Tindakan)
+    def tampilkanKelas(self):
+        print("Kelas: ", self.kelas)
     def tampilkanNamaMK(self):
-        print("Nama Mata Kuliah  :", self.nama_mk)
-        
+        print("Nama Mata Kuliah: ", self.nama_mk)
     def tampilkanSKS(self):
-        print("Jumlah SKS        :", self.jumlah_sks)
-        
+        print("Jumlah SKS: ", self.jumlah_sks)
     def tampilkanDosen(self):
-        print("Dosen Pengampu    :", self.dosen_pengampu)
-        
+        print("Dosen Pengampu: ", self.dosen_pengampu)
     def tampilkanRuang(self):
-        print("Ruang Kelas       :", self.ruang_kelas)
+        print("Ruang Kelas: ", self.ruang_kelas)
 
-# 3. Instansiasi (Pembuatan Objek Nyata)
-# Kita membuat jadwal untuk mata kuliah Algoritma
-mk_algo = MataKuliah("Algoritma dan Struktur Data", "3 SKS", "Ahmad Ashril Rizal, M.Si.", "Lab Komputer TIPD")
+print("Pilih Kelas:")
+print("Kelas A")
+print("Kelas B")
+pilihan_kelas = input("Masukkan kelas (A/B): ")
 
-print("JADWAL MATA KULIAH")
-# 4. Pemanggilan Method
-mk_algo.tampilkanNamaMK()
-mk_algo.tampilkanSKS()
-mk_algo.tampilkanDosen()
-mk_algo.tampilkanRuang()
+if pilihan_kelas == "A":
+    jadwal = MataKuliah("A", "Algoritma dan Struktur Data", "3 SKS", "Pak Ahmad Ashril Rizal, M.Cs.", "Lab Komputer TIPD")
+if pilihan_kelas == "B":
+    jadwal = MataKuliah("B", "Pemrograman Beorientasi Objek", "3 SKS", "Pak Arief Taufikurrahman, M.Eng.", "Lab Komputer TIPD")
+
+print("Informasi Mata Kuliah")
+jadwal.tampilkanKelas()
+jadwal.tampilkanNamaMK()
+jadwal.tampilkanSKS()
+jadwal.tampilkanDosen()
+jadwal.tampilkanRuang()
