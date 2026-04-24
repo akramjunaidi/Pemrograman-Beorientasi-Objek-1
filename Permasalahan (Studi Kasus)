@@ -1,10 +1,12 @@
 class MataKuliah:
+    # 1. Blueprint / Cetakan Atribut
     def __init__(self, nama_mk, jumlah_sks, dosen_pengampu, ruang_kelas):
         self.nama_mk = nama_mk
         self.jumlah_sks = jumlah_sks
         self.dosen_pengampu = dosen_pengampu
         self.ruang_kelas = ruang_kelas
 
+    # 2. Method Sederhana (Tindakan)
     def tampilkanNamaMK(self):
         print("Nama Mata Kuliah  :", self.nama_mk)
         
@@ -17,13 +19,13 @@ class MataKuliah:
     def tampilkanRuang(self):
         print("Ruang Kelas       :", self.ruang_kelas)
 
-mk_algo = MataKuliah("Algoritma dan Struktur Data", "3 SKS", "Bapak Ahmad Rizal", "Lab Komputer TIPD")
+# 3. Instansiasi (Pembuatan Objek Nyata)
+# Kita membuat jadwal untuk mata kuliah Algoritma
+mk_algo = MataKuliah("Algoritma dan Struktur Data", "3 SKS", "Ahmad Ashril Rizal, M.Si.", "Lab Komputer TIPD")
 
-print("DETAIL MATA KULIAH")
+print("JADWAL MATA KULIAH")
+# 4. Pemanggilan Method
 mk_algo.tampilkanNamaMK()
 mk_algo.tampilkanSKS()
 mk_algo.tampilkanDosen()
 mk_algo.tampilkanRuang()
-
-
-
