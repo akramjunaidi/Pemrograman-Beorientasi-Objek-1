@@ -14,7 +14,7 @@ class mahasiswa:
     def tampilkanAlamat(self):
         print("Alamat: ", self.alamat)
 
-akaii = mahasiswa("Akram Junaidi", "250306033", "o4-04-2005", "Maluk")
+akaii = mahasiswa("Akram Junaidi", "250306033", "04-04-2005", "Maluk")
 akaii.tampilkanNama()
 akaii.tampilkanNim()
 akaii.tampilkanTanggallahir()
